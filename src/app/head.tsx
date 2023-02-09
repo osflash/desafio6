@@ -1,7 +1,7 @@
 const Head = () => {
   return (
     <>
-      <title>NextJS 13- template</title>
+      <title>Desafio 5</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="#boraCodar" />
       <link rel="icon" href="/favicon.ico" />

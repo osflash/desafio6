@@ -2,40 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-[data-color-scheme='light'] {
-  color-scheme: light;
-
-  --bg-color: #cccccc;
-  --text-color: #333333;
-  --link-color: #444444;
-  --heading-color: #111111;
-  --border-color: #d2d2d2;
-  --header-bg: #dfdee3;
-  --shadow-color: #0001;
-}
-
-[data-color-scheme='dark'] {
-  color-scheme: dark;
-
-  --bg-color: #333333;
-  --text-color: #cccccc;
-  --link-color: #bbbbbb;
-  --heading-color: #eeeeee;
-  --border-color: #2d2d2d;
-  --header-bg: #1c1b20;
-  --shadow-color: #fff1;
-}
-
 @layer base {
   html {
-    @apply bg-skin-bg text-skin-text;
+    @apply text-white antialiased;
   }
 
   body {
-    @apply m-auto flex;
+    @apply m-auto flex h-screen w-screen;
   }
 
-  select {
-    @apply bg-skin-bg text-skin-text;
+  html {
+    background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
   }
+
+  p {
+    @apply overflow-hidden text-ellipsis whitespace-nowrap;
+  }
+}
+
+.ellipse::before,
+.ellipse::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-36px, -12px);
 }

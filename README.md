@@ -18,6 +18,8 @@
   </a>
 </p>
 
+![preview](.github/preview.gif)
+
 ---
 
 <p align="center">Feito com ❤️ por OsFlash ⚡</p>
