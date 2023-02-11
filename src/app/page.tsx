@@ -17,7 +17,7 @@ const Home: React.FC = () => {
         <Tilt>
           <div className="flex flex-col">
             {/* Flight Info */}
-            <div className="flex flex-1 flex-col gap-6 rounded-t-3xl bg-white px-8 py-6 text-black max-sm:rounded-b-3xl">
+            <div className="dot-top flex flex-1 flex-col gap-6 rounded-t-3xl px-8  py-6 text-black max-sm:rounded-b-3xl max-sm:bg-white">
               <div className="flex w-full flex-col">
                 <div className="flex justify-between text-[14px] font-normal opacity-60">
                   <p>Voo</p>
@@ -55,32 +55,24 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Divider */}
-            <span className="relative mx-auto flex w-[85%] justify-between border-b border-dashed border-black/30 bg-white sm:w-full">
-              <div className="absolute -left-[12px] -top-[12px] h-6 w-6 rounded-full bg-[#5e3fa5] bg-clip-content max-sm:hidden" />
-              <div className="absolute -top-[12px] -right-[12px] h-6 w-6 rounded-full bg-[#583b9c] bg-clip-content max-sm:hidden" />
-            </span>
+            <hr className="mx-auto flex w-[85%] justify-between border border-dashed border-black/30 bg-white sm:w-[92%]" />
 
-            <div className="flex flex-1 flex-col gap-6 bg-white px-8 py-6 text-black max-sm:rounded-3xl">
+            <div className="dot-middle flex flex-1 flex-col gap-6  px-8 py-6 text-black max-sm:rounded-3xl max-sm:bg-white sm:border-0">
               <div className="flex w-full flex-col">
                 <div className="flex justify-between text-[14px] font-normal opacity-60">
                   <p>Passageiro</p>
                   <p>Assento</p>
                 </div>
                 <div className="flex justify-between text-[16px] font-medium leading-[19px] tracking-[-0.02em] opacity-90">
-                  <p>Rodrigo Terron</p>
+                  <p>OsFlash</p>
                   <p>28A</p>
                 </div>
               </div>
             </div>
 
-            {/* Divider */}
-            <span className="relative mx-auto flex w-[85%] justify-between border-b border-dashed border-black/30 bg-white sm:w-full">
-              <div className="absolute -left-[12px] -top-[12px] h-6 w-6 rounded-full bg-[#593b9c] bg-clip-content max-sm:hidden" />
-              <div className="absolute -top-[12px] -right-[12px] h-6 w-6 rounded-full bg-[#51368f] bg-clip-content max-sm:hidden" />
-            </span>
+            <hr className="mx-auto flex w-[85%] justify-between border border-dashed border-black/30 bg-white sm:w-[92%]" />
 
-            <div className="flex flex-1 flex-col gap-6 rounded-b-3xl bg-white px-8 py-6 text-black max-sm:rounded-t-3xl">
+            <div className="dot-bottom flex flex-1 flex-col gap-6 rounded-b-3xl px-8 py-6 text-black max-sm:rounded-t-3xl max-sm:bg-white">
               <div className="flex w-full justify-between">
                 <div className="flex flex-col gap-4 text-left">
                   <div>
